@@ -12580,9 +12580,9 @@ Regulator creates active GND at half way between V+ and V- </description>
 -Rail splitter (12 volts as virtual GND)</text>
 <text x="43.18" y="-55.88" size="1.778" layer="91" rot="R270">b50k
 mix</text>
-<text x="91.44" y="33.02" size="1.778" layer="91">Clipping stage
--LM308 or OP07DP opamp
--(1M//1M)//(1K+40M)=494K ohm input impedance</text>
+<text x="15.24" y="-30.48" size="1.778" layer="91">Reverb tank driver
+-TL074 quad opamp
+-In and output buffers</text>
 <text x="-30.48" y="71.12" size="1.778" layer="91">Based on:
 </text>
 <text x="101.6" y="-106.68" size="1.778" layer="91" rot="R90">b50k
@@ -12593,7 +12593,7 @@ https://stinkfoot.se/archives/2233</text>
 <text x="-25.4" y="12.7" size="1.778" layer="91">0v</text>
 <text x="-20.32" y="12.7" size="1.778" layer="91">24v</text>
 <text x="83.82" y="20.32" size="1.778" layer="91">Power
-LT074</text>
+TL074</text>
 <text x="-81.28" y="2.54" size="1.778" layer="91" rot="R90">Jumper for 
 external led</text>
 <text x="53.34" y="-81.28" size="1.778" layer="91">Tank in

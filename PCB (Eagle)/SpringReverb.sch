@@ -11214,7 +11214,9 @@ See also HELP HOLE,</description>
 b50k
 mix</text>
 <text x="15.24" y="-30.48" size="1.778" layer="91">Reverb tank driver
--TL074 quad opamp
+-TL072 dual opamp
+or
+-NE5532 dual opamp
 -In and output buffers</text>
 <text x="-30.48" y="71.12" size="1.778" layer="91">Based on:
 </text>

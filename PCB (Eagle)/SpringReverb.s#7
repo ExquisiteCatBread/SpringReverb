@@ -12916,7 +12916,7 @@ external led</text>
 <label x="170.18" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="24VIN" class="0">
 <segment>
 <wire x1="-20.32" y1="17.78" x2="-2.54" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="1"/>
@@ -12925,6 +12925,7 @@ external led</text>
 <wire x1="-20.32" y1="17.78" x2="-20.32" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="25.4" x2="-66.04" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-20.32" y="17.78"/>
+<label x="-17.78" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$19" class="0">
