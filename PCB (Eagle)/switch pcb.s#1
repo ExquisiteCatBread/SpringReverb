@@ -6588,6 +6588,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,68.9017,46.99,LED1,,,,,"/>
+<approved hash="113,1,67.4903,55.88,R1,,,,,"/>
+<approved hash="113,1,59.8703,46.99,R2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

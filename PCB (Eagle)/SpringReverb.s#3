@@ -11182,7 +11182,7 @@ See also HELP HOLE,</description>
 <sheets>
 <sheet>
 <plain>
-<text x="17.78" y="25.4" size="1.778" layer="91">Power supply
+<text x="27.94" y="25.4" size="1.778" layer="91">Power supply
 -Fuse
 -Reverse polarity pretection diode
 -Low pass filter
@@ -11431,6 +11431,9 @@ TL074</text>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
 <junction x="86.36" y="17.78"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="-66.04" y1="25.4" x2="22.86" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="25.4" x2="22.86" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -11537,10 +11540,6 @@ TL074</text>
 <wire x1="-20.32" y1="17.78" x2="-2.54" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="1"/>
 <pinref part="J1" gate="G$1" pin="1"/>
-<pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="-20.32" y1="17.78" x2="-20.32" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="25.4" x2="-66.04" y2="25.4" width="0.1524" layer="91"/>
-<junction x="-20.32" y="17.78"/>
 <label x="-17.78" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -11554,13 +11553,6 @@ TL074</text>
 <pinref part="JP1" gate="A" pin="17"/>
 <wire x1="190.5" y1="-93.98" x2="170.18" y2="-93.98" width="0.1524" layer="91"/>
 <label x="170.18" y="-93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="F1" gate="G$1" pin="2"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="17.78" x2="10.16" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -11840,9 +11832,25 @@ TL074</text>
 <label x="170.18" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="F1" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="17.78" x2="10.16" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,-60.96,-30.48,H1,1,,,,"/>
+<approved hash="101,1,-60.96,-38.1,H2,1,,,,"/>
+<approved hash="101,1,-60.96,-45.72,H3,1,,,,"/>
+<approved hash="101,1,-60.96,-53.34,H4,1,,,,"/>
+<approved hash="104,1,86.36,15.24,IC2P,V+,12V,,,"/>
+<approved hash="104,1,86.36,0,IC2P,V-,-12V,,,"/>
+<approved hash="113,1,190.737,-73.4339,JP1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

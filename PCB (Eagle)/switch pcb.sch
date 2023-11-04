@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -6422,7 +6422,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:6240537/1"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
-<part name="U$1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X10" device="" package3d_urn="urn:adsk.eagle:package:6240656/1"/>
+<part name="U$2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X10" device="" package3d_urn="urn:adsk.eagle:package:6240656/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -6445,9 +6445,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="59.4614" y="43.18" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="64.262" y="43.18" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$1" gate="G$1" x="31.75" y="91.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="18.415" y="85.09" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="49.53" y="85.09" size="1.778" layer="96" rot="R90"/>
+<instance part="U$2" gate="G$1" x="31.75" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="18.415" y="72.39" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="49.53" y="72.39" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -6461,11 +6461,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="INJACK+" class="0">
 <segment>
-<label x="21.59" y="60.96" size="1.778" layer="95" rot="R90"/>
-<wire x1="21.59" y1="67.31" x2="21.59" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="S1" gate="G$1" pin="S2"/>
 <wire x1="54.61" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
 <label x="50.8" y="27.94" size="1.778" layer="95"/>
@@ -6475,37 +6470,37 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="48.26" y1="22.86" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
 <junction x="48.26" y="27.94"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="9"/>
+<wire x1="41.91" y1="76.2" x2="41.91" y2="66.04" width="0.1524" layer="91"/>
+<label x="41.91" y="58.42" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="INJACK-" class="0">
 <segment>
-<wire x1="29.21" y1="88.9" x2="29.21" y2="67.31" width="0.1524" layer="91"/>
-<label x="29.21" y="60.96" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$1" gate="G$1" pin="4"/>
+<pinref part="U$2" gate="G$1" pin="2"/>
+<wire x1="24.13" y1="76.2" x2="24.13" y2="66.04" width="0.1524" layer="91"/>
+<label x="24.13" y="58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<wire x1="24.13" y1="88.9" x2="24.13" y2="67.31" width="0.1524" layer="91"/>
-<label x="24.13" y="60.96" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$1" gate="G$1" pin="2"/>
+<pinref part="U$2" gate="G$1" pin="10"/>
+<wire x1="44.45" y1="76.2" x2="44.45" y2="66.04" width="0.1524" layer="91"/>
+<label x="44.45" y="58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="INEFF+" class="0">
-<segment>
-<label x="26.67" y="60.96" size="1.778" layer="95" rot="R90"/>
-<wire x1="26.67" y1="67.31" x2="26.67" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="3"/>
-</segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="P2"/>
 <wire x1="25.4" y1="30.48" x2="20.32" y2="30.48" width="0.1524" layer="91"/>
 <label x="13.97" y="30.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="1"/>
+<wire x1="21.59" y1="76.2" x2="21.59" y2="66.04" width="0.1524" layer="91"/>
+<label x="21.59" y="58.42" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="LED+" class="0">
-<segment>
-<label x="31.75" y="60.96" size="1.778" layer="95" rot="R90"/>
-<wire x1="31.75" y1="67.31" x2="31.75" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="5"/>
-</segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="52.07" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
@@ -6515,41 +6510,46 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="60.96" y="60.96"/>
 <label x="57.15" y="60.96" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="5"/>
+<wire x1="31.75" y1="76.2" x2="31.75" y2="66.04" width="0.1524" layer="91"/>
+<label x="31.75" y="58.42" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="OUTEFF+" class="0">
-<segment>
-<label x="36.83" y="60.96" size="1.778" layer="95" rot="R90"/>
-<wire x1="36.83" y1="67.31" x2="36.83" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="7"/>
-</segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="S3"/>
 <wire x1="35.56" y1="17.78" x2="53.34" y2="17.78" width="0.1524" layer="91"/>
 <label x="50.8" y="17.78" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="3"/>
+<wire x1="26.67" y1="76.2" x2="26.67" y2="66.04" width="0.1524" layer="91"/>
+<label x="26.67" y="58.42" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="OUTJACK-" class="0">
 <segment>
-<wire x1="44.45" y1="88.9" x2="44.45" y2="67.31" width="0.1524" layer="91"/>
-<label x="44.45" y="60.96" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$1" gate="G$1" pin="10"/>
+<pinref part="U$2" gate="G$1" pin="4"/>
+<wire x1="29.21" y1="76.2" x2="29.21" y2="66.04" width="0.1524" layer="91"/>
+<label x="29.21" y="58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<wire x1="39.37" y1="88.9" x2="39.37" y2="67.31" width="0.1524" layer="91"/>
-<label x="39.37" y="60.96" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$1" gate="G$1" pin="8"/>
+<pinref part="U$2" gate="G$1" pin="8"/>
+<wire x1="39.37" y1="76.2" x2="39.37" y2="66.04" width="0.1524" layer="91"/>
+<label x="39.37" y="58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="OUTJACK+" class="0">
 <segment>
-<label x="41.91" y="60.96" size="1.778" layer="95" rot="R90"/>
-<wire x1="41.91" y1="67.31" x2="41.91" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="9"/>
-</segment>
-<segment>
 <pinref part="S1" gate="G$1" pin="P3"/>
 <wire x1="25.4" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
 <label x="11.43" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="7"/>
+<wire x1="36.83" y1="76.2" x2="36.83" y2="66.04" width="0.1524" layer="91"/>
+<label x="36.83" y="58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -6559,9 +6559,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="13.97" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="34.29" y="60.96" size="1.778" layer="95" rot="R90"/>
-<wire x1="34.29" y1="67.31" x2="34.29" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="6"/>
+<pinref part="U$2" gate="G$1" pin="6"/>
+<wire x1="34.29" y1="76.2" x2="34.29" y2="66.04" width="0.1524" layer="91"/>
+<label x="34.29" y="58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$5" class="0">
