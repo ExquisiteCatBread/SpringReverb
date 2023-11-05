@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -150,16 +150,16 @@
 <wire x1="27.61" y1="23.866" x2="26.086" y2="25.39" width="0" layer="20" curve="90"/>
 <wire x1="26.086" y1="25.39" x2="1.524" y2="25.39" width="0" layer="20"/>
 <wire x1="1.524" y1="25.39" x2="0" y2="23.866" width="0" layer="20" curve="90"/>
-<text x="2.54" y="21.336" size="0.8128" layer="22" rot="MR270">InJ+</text>
-<text x="5.08" y="21.336" size="0.8128" layer="22" rot="MR270">InJ-</text>
-<text x="7.62" y="21.336" size="0.8128" layer="22" rot="MR270">InE+</text>
-<text x="10.16" y="21.336" size="0.8128" layer="22" rot="MR270">InE+</text>
+<text x="2.54" y="21.336" size="0.8128" layer="22" rot="MR270">InE+</text>
+<text x="5.08" y="21.336" size="0.8128" layer="22" rot="MR270">InE-</text>
+<text x="7.62" y="21.336" size="0.8128" layer="22" rot="MR270">OutE+</text>
+<text x="10.16" y="21.336" size="0.8128" layer="22" rot="MR270">OutE-</text>
 <text x="12.7" y="21.336" size="0.8128" layer="22" rot="MR270">LED</text>
 <text x="15.24" y="21.336" size="0.8128" layer="22" rot="MR270">GND</text>
-<text x="17.78" y="21.336" size="0.8128" layer="22" rot="MR270">OutE+</text>
-<text x="20.32" y="21.336" size="0.8128" layer="22" rot="MR270">OutE-</text>
-<text x="22.86" y="21.336" size="0.8128" layer="22" rot="MR270">OutJ+</text>
-<text x="25.4" y="21.336" size="0.8128" layer="22" rot="MR270">OutJ-</text>
+<text x="17.78" y="21.336" size="0.8128" layer="22" rot="MR270">OutJ+</text>
+<text x="20.32" y="21.336" size="0.8128" layer="22" rot="MR270">OutJ-</text>
+<text x="22.86" y="21.336" size="0.8128" layer="22" rot="MR270">InJ+</text>
+<text x="25.4" y="21.336" size="0.8128" layer="22" rot="MR270">InJ-</text>
 <rectangle x1="0.9398" y1="13.6906" x2="1.0922" y2="13.716" layer="22" rot="R270" grouprefs="KOALA"/>
 <rectangle x1="0.9652" y1="10.922" x2="1.0668" y2="10.9474" layer="22" rot="R270" grouprefs="KOALA"/>
 <rectangle x1="1.0033" y1="10.8331" x2="1.0287" y2="10.8585" layer="22" rot="R270" grouprefs="KOALA"/>
@@ -2062,7 +2062,82 @@ Your Eurocircuits Team
 <vertex x="27.94" y="25.4"/>
 </polygon>
 <contactref element="U$2" pad="6"/>
-<wire x1="11.43" y1="14.96" x2="15.24" y2="22.86" width="0" layer="19" extent="1-1"/>
+<via x="2.8956" y="17.4752" extent="1-16" drill="0.35"/>
+<via x="5.1308" y="17.526" extent="1-16" drill="0.35"/>
+<via x="2.54" y="15.7734" extent="1-16" drill="0.35"/>
+<via x="1.016" y="15.0876" extent="1-16" drill="0.35"/>
+<via x="1.2446" y="18.3134" extent="1-16" drill="0.35"/>
+<via x="1.5494" y="20.0152" extent="1-16" drill="0.35"/>
+<via x="4.9784" y="20.4978" extent="1-16" drill="0.35"/>
+<via x="10.3124" y="17.8562" extent="1-16" drill="0.35"/>
+<via x="12.6492" y="12.4714" extent="1-16" drill="0.35"/>
+<via x="8.8138" y="10.414" extent="1-16" drill="0.35"/>
+<via x="3.5052" y="7.3152" extent="1-16" drill="0.35"/>
+<via x="1.397" y="11.0744" extent="1-16" drill="0.35"/>
+<via x="1.8034" y="2.6924" extent="1-16" drill="0.35"/>
+<via x="5.3848" y="1.6256" extent="1-16" drill="0.35"/>
+<via x="2.0574" y="4.7752" extent="1-16" drill="0.35"/>
+<via x="9.7282" y="1.2446" extent="1-16" drill="0.35"/>
+<via x="8.8392" y="4.9784" extent="1-16" drill="0.35"/>
+<via x="8.382" y="8.7884" extent="1-16" drill="0.35"/>
+<via x="7.6454" y="12.6238" extent="1-16" drill="0.35"/>
+<via x="7.6454" y="17.4244" extent="1-16" drill="0.35"/>
+<via x="14.9352" y="17.8308" extent="1-16" drill="0.35"/>
+<via x="20.32" y="18.0086" extent="1-16" drill="0.35"/>
+<via x="19.3802" y="16.3322" extent="1-16" drill="0.35"/>
+<via x="17.5768" y="17.399" extent="1-16" drill="0.35"/>
+<via x="15.3416" y="12.2682" extent="1-16" drill="0.35"/>
+<via x="17.3482" y="12.573" extent="1-16" drill="0.35"/>
+<via x="17.9324" y="7.6454" extent="1-16" drill="0.35"/>
+<via x="14.0716" y="6.2738" extent="1-16" drill="0.35"/>
+<via x="9.1948" y="6.5786" extent="1-16" drill="0.35"/>
+<via x="19.2532" y="2.3622" extent="1-16" drill="0.35"/>
+<via x="13.6906" y="2.3114" extent="1-16" drill="0.35"/>
+<via x="16.4338" y="1.016" extent="1-16" drill="0.35"/>
+<via x="16.1798" y="2.4384" extent="1-16" drill="0.35"/>
+<via x="24.7396" y="4.4958" extent="1-16" drill="0.35"/>
+<via x="20.4724" y="6.6802" extent="1-16" drill="0.35"/>
+<via x="21.6154" y="13.1826" extent="1-16" drill="0.35"/>
+<via x="25.7302" y="10.287" extent="1-16" drill="0.35"/>
+<via x="26.797" y="13.5128" extent="1-16" drill="0.35"/>
+<via x="24.003" y="14.1986" extent="1-16" drill="0.35"/>
+<via x="26.0858" y="19.7612" extent="1-16" drill="0.35"/>
+<via x="24.2316" y="18.9992" extent="1-16" drill="0.35"/>
+<via x="24.1808" y="21.0566" extent="1-16" drill="0.35"/>
+<via x="26.797" y="18.5166" extent="1-16" drill="0.35"/>
+<via x="22.2504" y="2.8448" extent="1-16" drill="0.35"/>
+<via x="23.9268" y="2.0574" extent="1-16" drill="0.35"/>
+<via x="26.4922" y="1.3462" extent="1-16" drill="0.35"/>
+<via x="26.8986" y="7.1374" extent="1-16" drill="0.35"/>
+<via x="22.4028" y="6.731" extent="1-16" drill="0.35"/>
+<via x="21.971" y="4.8006" extent="1-16" drill="0.35"/>
+<via x="19.685" y="4.3434" extent="1-16" drill="0.35"/>
+<via x="20.3454" y="8.7884" extent="1-16" drill="0.35"/>
+<via x="15.875" y="7.6708" extent="1-16" drill="0.35"/>
+<via x="13.9192" y="3.5052" extent="1-16" drill="0.35"/>
+<via x="7.3406" y="2.5908" extent="1-16" drill="0.35"/>
+<via x="7.6454" y="1.0414" extent="1-16" drill="0.35"/>
+<via x="1.1684" y="1.1938" extent="1-16" drill="0.35"/>
+<via x="1.0668" y="24.3586" extent="1-16" drill="0.35"/>
+<via x="0.8636" y="22.3012" extent="1-16" drill="0.35"/>
+<via x="3.937" y="24.13" extent="1-16" drill="0.35"/>
+<via x="6.8834" y="24.8158" extent="1-16" drill="0.35"/>
+<via x="8.9408" y="23.9776" extent="1-16" drill="0.35"/>
+<via x="11.8364" y="24.638" extent="1-16" drill="0.35"/>
+<via x="14.0208" y="24.13" extent="1-16" drill="0.35"/>
+<via x="16.51" y="24.6888" extent="1-16" drill="0.35"/>
+<via x="18.7706" y="24.2316" extent="1-16" drill="0.35"/>
+<via x="20.0914" y="24.5872" extent="1-16" drill="0.35"/>
+<via x="22.5298" y="24.6126" extent="1-16" drill="0.35"/>
+<via x="21.5138" y="24.1046" extent="1-16" drill="0.35"/>
+<via x="24.1808" y="24.1554" extent="1-16" drill="0.35"/>
+<via x="26.4414" y="24.6126" extent="1-16" drill="0.35"/>
+<via x="27.0002" y="23.3172" extent="1-16" drill="0.35"/>
+<via x="27.0256" y="21.5646" extent="1-16" drill="0.35"/>
+<via x="21.209" y="21.3868" extent="1-16" drill="0.35"/>
+<via x="8.9154" y="21.9202" extent="1-16" drill="0.35"/>
+<wire x1="26.4414" y1="24.6126" x2="27.0002" y2="23.3172" width="0" layer="19" extent="1-1"/>
+<wire x1="8.9154" y1="21.9202" x2="8.9408" y2="23.9776" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUTEFF+">
 <contactref element="S1" pad="9"/>
@@ -2077,7 +2152,7 @@ Your Eurocircuits Team
 <signal name="OUTJACK+">
 <contactref element="S1" pad="8"/>
 <contactref element="U$2" pad="7"/>
-<wire x1="17.78" y1="22.86" x2="11.43" y2="5.36" width="0" layer="19" extent="1-1"/>
+<wire x1="11.43" y1="5.36" x2="17.78" y2="22.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="S1" pad="1"/>
@@ -2098,7 +2173,7 @@ Your Eurocircuits Team
 <contactref element="U$2" pad="10"/>
 <wire x1="5.08" y1="22.86" x2="7.874" y2="20.066" width="0.8128" layer="16"/>
 <wire x1="7.874" y1="20.066" x2="21.8972" y2="20.066" width="0.8128" layer="16"/>
-<wire x1="25.4" y1="22.86" x2="21.8972" y2="20.066" width="0" layer="19" extent="16-16"/>
+<wire x1="21.8972" y1="20.066" x2="25.4" y2="22.86" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="OUTJACK-">
 <contactref element="U$2" pad="4"/>

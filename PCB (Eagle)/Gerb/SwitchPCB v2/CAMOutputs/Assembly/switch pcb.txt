@@ -1,0 +1,7 @@
+Partlist exported from C:/Users/verme/Desktop/SpringReverb/SpringReverb/PCB (Eagle)/switch pcb.sch at 5-11-2023 15:30
+
+Qty Value      Device     Package  Parts  Description                               POPULARITY SPICEPREFIX
+1              LED3MM     LED3MM   LED1   LED                                                             
+2              R-EU_R0603 R0603    R1, R2 RESISTOR, European symbol                 70         R          
+1   3PDT       3PDT       3PDT     S2     3PDT 9 pin footswitch SF17020F-0302-21R-L 2                     
+1   PINHD-1X10 PINHD-1X10 1X10-BIG U$2    Pin header 1x10 0.1" spacing                                    
