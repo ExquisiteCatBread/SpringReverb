@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -572,7 +572,7 @@
 <text x="41.84" y="5" size="0.8128" layer="21" rot="R90">Dwell pot 2</text>
 <text x="44.4" y="5" size="0.8128" layer="21" rot="R90">Dwell pot 3</text>
 <text x="46.96" y="5" size="0.8128" layer="21" rot="R90">LED+</text>
-<text x="49.52" y="5" size="0.8128" layer="21" rot="R90">LED-</text>
+<text x="49.52" y="5" size="0.8128" layer="21" rot="R90">GND</text>
 <dimension x1="52" y1="42" x2="52" y2="10" x3="61" y3="26" textsize="1.778" layer="47"/>
 <dimension x1="52" y1="42" x2="3" y2="42" x3="27.5" y3="50" textsize="1.778" layer="47"/>
 </plain>
@@ -2729,6 +2729,7 @@ Your Eurocircuits Team
 <via x="19" y="7" extent="1-16" drill="0.35"/>
 <via x="9" y="6" extent="1-16" drill="0.35"/>
 <via x="9" y="23" extent="1-16" drill="0.35"/>
+<contactref element="JP1" pad="18"/>
 </signal>
 <signal name="24VIN">
 <contactref element="F1" pad="1"/>
@@ -2751,7 +2752,6 @@ Your Eurocircuits Team
 <contactref element="J1" pad="2"/>
 <contactref element="IC2" pad="11"/>
 <contactref element="C12" pad="2"/>
-<contactref element="JP1" pad="18"/>
 <wire x1="35.5" y1="31.42" x2="37.98" y2="33.9" width="1.016" layer="1"/>
 <wire x1="37.98" y1="33.9" x2="39.5" y2="33.9" width="1.016" layer="1"/>
 <wire x1="39.5" y1="33.9" x2="39.6" y2="34" width="1.016" layer="1"/>
@@ -2770,8 +2770,6 @@ Your Eurocircuits Team
 <wire x1="42.095" y1="24.095" x2="42.095" y2="34" width="1.016" layer="16"/>
 <wire x1="30" y1="21" x2="39" y2="21" width="1.016" layer="16"/>
 <wire x1="39" y1="21" x2="42.095" y2="24.095" width="1.016" layer="16"/>
-<wire x1="49.09" y1="3" x2="49.09" y2="17.1" width="1.016" layer="16"/>
-<wire x1="49.09" y1="17.1" x2="42.095" y2="24.095" width="1.016" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="IC2" pad="3"/>
